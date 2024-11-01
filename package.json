@@ -14,6 +14,7 @@
     "typecheck": "vue-tsc --noEmit && npx nuxi typecheck"
   },
   "dependencies": {
+    "@nuxt/fonts": "^0.10.2",
     "@nuxt/image": "^1.8.1",
     "@nuxt/ui": "^2.18.7",
     "nuxt": "^3.13.2",
