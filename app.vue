@@ -1,9 +1,17 @@
 <script setup lang="ts">
 const colorMode = useColorMode();
+const route = useRoute();
 
 const color = computed(() => colorMode.value === "dark" ? "#111827" : "#f1f5f9");
 
 useHead({
+  titleTemplate: (titleChunk) => {
+    if (route.meta.title || titleChunk) {
+      return `${titleChunk || route.meta.title} | Nuxt 3 + Nuxt UI Starter Template`;
+    }
+
+    return "Home - Nuxt 3 + Nuxt UI Starter Template";
+  },
   meta: [
     { name: "viewport", content: "width=device-width, initial-scale=1" },
     { key: "theme-color", name: "theme-color", content: color },
@@ -18,7 +26,7 @@ useHead({
 </script>
 
 <template>
-  <div>
+  <div class="font-manrope w-screen overflow-hidden">
     <NuxtLayout>
       <NuxtPage />
     </NuxtLayout>
@@ -26,6 +34,10 @@ useHead({
 </template>
 
 <style lang="postcss">
+html {
+  @apply scroll-smooth;
+}
+
 body {
   @apply bg-slate-100 dark:bg-gray-900 text-slate-900 dark:text-gray-100;
   transition: background-color 0.3s;
