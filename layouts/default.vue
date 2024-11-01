@@ -1,5 +1,5 @@
 <template>
-  <UContainer class="h-svh">
+  <UContainer class="py-4 lg:py-6">
     <slot />
   </UContainer>
 </template>
