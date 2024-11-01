@@ -1,3 +1,9 @@
 export default defineAppConfig({
-  ui: {},
+  ui: {
+    primary: "green",
+    gray: "slate",
+    container: {
+      constrained: "max-w-screen-xl",
+    },
+  },
 });
