@@ -7,7 +7,7 @@ const { $api } = useNuxtApp();
 /**
  * If you have not fetched data on the server (for example, with server: false), then the data will not be fetched until hydration completes. This means even if you await useAsyncData on the client side, data will remain null within <script setup> (https://nuxt.com/docs/api/composables/use-async-data).
  *
- * You can remove the await keyword to display the Loading element (on first render) and then the data will be fetched and displayed on the next render.
+ * You can remove the await keyword to display the Loading element (on first render).
  */
 const { data, status } = await useAsyncData<
   Response<Product[], "products">
@@ -74,11 +74,6 @@ const { data, status } = await useAsyncData<
             }}
           </li>
         </ul>
-        <template #footer>
-          <ULink :to="`/product/${product.id}`">
-            View Product
-          </ULink>
-        </template>
       </UCard>
     </template>
   </div>
