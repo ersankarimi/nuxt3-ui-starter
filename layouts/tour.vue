@@ -3,7 +3,8 @@
     <NuxtLoadingIndicator
       color="#64748b"
     />
-    <AppHeader />
+    <UNotifications />
+    <TheHeader />
     <div
       class="py-4 lg:py-6 mt-20"
     >
