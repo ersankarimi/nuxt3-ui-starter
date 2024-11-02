@@ -4,6 +4,7 @@ const tourLinks = [
   { name: "Auth", path: "/tour/login" },
   { name: "Custom $fetch", path: "/tour/custom-fetch" },
   { name: "Custom useFetch", path: "/tour/custom-use-fetch" },
+  { name: "With Repository Pattern", path: "/tour/with-repository-pattern" },
 ];
 </script>
 
