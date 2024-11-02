@@ -3,6 +3,7 @@ const tourLinks = [
   { name: "Home", path: "/" },
   { name: "Auth", path: "/tour/login" },
   { name: "Custom $fetch", path: "/tour/custom-fetch" },
+  { name: "Custom useFetch", path: "/tour/custom-use-fetch" },
 ];
 </script>
 
