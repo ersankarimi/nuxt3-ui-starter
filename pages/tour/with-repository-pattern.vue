@@ -5,6 +5,7 @@ const { $service } = useNuxtApp();
 
 const product = ref<Product | null>(null);
 const loading = ref<boolean>(true);
+const { add } = useToast();
 
 async function findProduct() {
   try {
@@ -24,6 +25,10 @@ async function updateProduct() {
     loading.value = true;
     product.value = await $service.product.update(1, {
       title: "Updated Title",
+    });
+    add({
+      title: "Product Updated",
+      description: "Product has been updated successfully",
     });
   }
   catch (error) {
