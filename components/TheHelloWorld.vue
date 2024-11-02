@@ -7,11 +7,11 @@ const isScrolled = computed(() => y.value > 0);
 
 const enhancements = [
   {
-    title: "ESLint",
-    description: "Code style enforcer with reasonable defaults and extensive support for various file types.",
-    details: "Auto fix for formatting, works standalone without Prettier.",
-    link: "https://github.com/antfu/eslint-config",
-    icon: "i-heroicons-check-circle-solid",
+    title: "Nuxt Auth",
+    description: "User authentication and sessions for Nuxt 3 applications.",
+    details: "NuxtAuth provides multiple authentication methods, allowing direct access to user sessions in pages, components, and composables.",
+    link: "https://sidebase.io/nuxt-auth",
+    icon: "i-heroicons-shield-check-solid",
   },
   {
     title: "Nuxt Image",
@@ -28,11 +28,11 @@ const enhancements = [
     icon: "i-heroicons-document-text-solid",
   },
   {
-    title: "Custom useFetch",
-    description: "Customized data fetching composable for better control over API requests.",
-    details: "Set default options for external API calls to ensure consistency across the app.",
-    link: "https://nuxt.com/docs/guide/recipes/custom-usefetch",
-    icon: "i-heroicons-code-bracket-square-solid",
+    title: "Pinia",
+    description: "The intuitive store for Vue.js.",
+    details: "Type safe, extensible, and modular by design. Makes state management seamless and unobtrusive.",
+    link: "https://pinia.vuejs.org/",
+    icon: "i-heroicons-cube-transparent",
   },
   {
     title: "Custom $fetch",
@@ -42,11 +42,25 @@ const enhancements = [
     icon: "i-heroicons-code-bracket-solid",
   },
   {
+    title: "Custom useFetch",
+    description: "Customized data fetching composable for better control over API requests.",
+    details: "Set default options for external API calls to ensure consistency across the app.",
+    link: "https://nuxt.com/docs/guide/recipes/custom-usefetch",
+    icon: "i-heroicons-code-bracket-square-solid",
+  },
+  {
     title: "Repository Pattern",
     description: "Abstracts API calls and provides a structured way to manage data interactions.",
     details: "Implements a repository pattern in Nuxt, discussing the use of composables and $fetch.",
     link: "https://youtu.be/jXH8Tr-exhI?si=ko6E7v5ELVSQthrx",
     icon: "i-heroicons-cube-solid",
+  },
+  {
+    title: "ESLint",
+    description: "Code style enforcer with reasonable defaults and extensive support for various file types.",
+    details: "Auto fix for formatting, works standalone without Prettier.",
+    link: "https://github.com/antfu/eslint-config",
+    icon: "i-heroicons-check-circle-solid",
   },
 ];
 </script>
