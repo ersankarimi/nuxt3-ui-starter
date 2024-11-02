@@ -122,6 +122,7 @@ const enhancements = [
             label="Take me a tour"
             color="emerald"
             variant="soft"
+            to="/tour"
           >
             <template #leading>
               🎉
