@@ -41,7 +41,7 @@ async function handleRefresh() {
 async function onSubmit(event: FormSubmitEvent<Schema>) {
   try {
     loading.value = true;
-    await signIn(event.data, { callbackUrl: "/tour/login" },
+    await signIn(event.data, { callbackUrl: "/tour/auth" },
     );
   }
   catch (error) {
