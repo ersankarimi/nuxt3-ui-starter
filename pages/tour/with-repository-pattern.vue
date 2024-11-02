@@ -1,6 +1,10 @@
 <script setup lang="ts">
 import type { Product } from "@/types/product";
 
+definePageMeta({
+  title: "Repository Pattern",
+});
+
 const { $service } = useNuxtApp();
 
 const product = ref<Product | null>(null);

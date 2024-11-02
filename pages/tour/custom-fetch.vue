@@ -2,6 +2,10 @@
 import type { Product } from "@/types/product";
 import type { Response } from "@/types/response";
 
+definePageMeta({
+  title: "Custom Fetch",
+});
+
 const { $api } = useNuxtApp();
 
 /**

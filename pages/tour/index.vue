@@ -1,3 +1,9 @@
+<script setup lang="ts">
+definePageMeta({
+  title: "Tour",
+});
+</script>
+
 <template>
   <div class="mt-12 flex flex-col items-center justify-center space-y-8">
     <UCard class="text-center flex-1 shadow-lg p-8 max-w-3xl w-full">

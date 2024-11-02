@@ -2,6 +2,10 @@
 import type { FormSubmitEvent } from "#ui/types";
 import { z } from "zod";
 
+definePageMeta({
+  title: "Auth",
+});
+
 const schema = z.object({
   username: z.string().min(1, {
     message: "Username is required",

@@ -1,6 +1,10 @@
 <script setup lang="ts">
 import type { Product } from "@/types/product";
 
+definePageMeta({
+  title: "Custom Fetch",
+});
+
 /**
  * If you have not fetched data on the server (for example, with server: false), then the data will not be fetched until hydration completes. This means even if you await useAsyncData on the client side, data will remain null within <script setup> (https://nuxt.com/docs/api/composables/use-async-data).
  *
