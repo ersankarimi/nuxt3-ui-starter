@@ -1,5 +1,6 @@
 <script setup lang="ts">
 const tourLinks = [
+  { name: "Home", path: "/" },
   { name: "Auth", path: "/tour/login" },
 ];
 </script>
@@ -7,7 +8,7 @@ const tourLinks = [
 <template>
   <header class="h-[var(--header-height)] flex items-center justify-between gap-4">
     <nav class="flex items-center justify-center flex-1">
-      <ul class="flex items-center gap-3 font-medium">
+      <ul class="flex items-center gap-8 font-medium">
         <li
           v-for="link in tourLinks"
           :key="link.name"
