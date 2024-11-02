@@ -66,17 +66,17 @@ const enhancements = [
         <NuxtImg
           src="/dots.svg"
           alt="Dots Illustrations"
-          class="animate-pulse"
+          class="animate-pulse w-full"
         />
         <NuxtImg
           src="/dots.svg"
           alt="Dots Illustrations"
-          class=""
+          class="w-full"
         />
         <NuxtImg
           src="/dots.svg"
           alt="Dots Illustrations"
-          class=""
+          class="w-full"
         />
       </div>
 
@@ -105,7 +105,7 @@ const enhancements = [
         <h2 class="text-4xl md:text-5xl lg:text-6xl font-bold">
           Starter Template
         </h2>
-        <p class="text-lg lg:text-xl mt-2">
+        <p class="text-lg lg:text-xl mt-2 2xl:w-3/5">
           Based on
           <a
             target="_blank"
@@ -169,18 +169,18 @@ const enhancements = [
           <template #header>
             <UIcon
               :name="enhancement.icon"
-              class="text-4xl dark:text-green-100 text-green-600"
+              class="text-4xl dark:text-slate-200 text-green-600"
             />
-            <h3 class="text-2xl font-semibold text-green-900 dark:text-green-100">
+            <h3 class="text-2xl font-semibold text-gray-900 dark:text-slate-100">
               {{ enhancement.title }}
             </h3>
           </template>
 
           <div class="flex flex-col gap-2">
-            <p class="text-base text-green-700 dark:text-green-100">
+            <p class="text-base dark:text-slate-100">
               {{ enhancement.description }}
             </p>
-            <p class="text-sm text-green-600 dark:text-green-300">
+            <p class="text-sm text-slate-700 dark:text-green-300">
               {{ enhancement.details }}
             </p>
             <UButton
@@ -207,13 +207,13 @@ const enhancements = [
       class="mt-10 text-center border-t-[0.25px] py-4 border-green-500 dark:border-green-100"
     >
       <div class="flex flex-col-reverse gap-4 items-center justify-center lg:flex-row lg:justify-between">
-        <p class="text-sm text-green-500 dark:text-green-100">
+        <p class="text-sm text-green-500 dark:text-slate-100">
           Published under <a href="https://github.com/ersankarimi/nuxt3-ui-starter/blob/main/LICENSE" target="_blank" class="underline">MIT License</a>
         </p>
         <div class="flex items-center gap-3">
           <ULink
             to="https://codesandbox.io/s/github/ersankarimi/nuxt3-ui-starter/tree/main"
-            class="text-sm text-green-500 dark:text-green-100"
+            class="text-sm text-green-500 dark:text-slate-100"
           >
             Playground
           </ULink>
