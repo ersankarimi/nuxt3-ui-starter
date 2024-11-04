@@ -1,4 +1,21 @@
+/*
+* NOTE: Make sure you set the language to PostCSS in your code editor to get better syntax highlighting and formatting with the eslint.
+*/
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 :root {
   --header-height: 88px;
   --sidebar-width: 300px;
+}
+
+html {
+  @apply scroll-smooth;
+}
+
+body {
+  @apply bg-slate-100 dark:bg-gray-900 text-slate-900 dark:text-gray-100;
+  transition: background-color 0.3s;
 }
