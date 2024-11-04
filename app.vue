@@ -40,14 +40,3 @@ const layout = computed(() => {
     </NuxtLayout>
   </div>
 </template>
-
-<style lang="postcss">
-html {
-  @apply scroll-smooth;
-}
-
-body {
-  @apply bg-slate-100 dark:bg-gray-900 text-slate-900 dark:text-gray-100;
-  transition: background-color 0.3s;
-}
-</style>
