@@ -16,6 +16,12 @@ export default defineNuxtConfig({
     typeCheck: true,
   },
 
+  // Nuxt TailwindCSS Configuration (https://tailwindcss.nuxtjs.org/)
+  tailwindcss: {
+    cssPath: "@/assets/css/app.css",
+    configPath: "tailwind.config.js",
+  },
+
   // Nuxt Image Configuration (https://image.nuxt.com/advanced/static-images)
   nitro: {
     prerender: {
