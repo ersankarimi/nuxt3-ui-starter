@@ -39,7 +39,7 @@ async function handleGetProduct() {
       <code
         class="w-full overflow-hidden px-8"
       >
-        <pre class="text-left px-8 overflow-scroll bg-red-500 w-full max-h-96">{{ product }}
+        <pre class="text-left px-8 overflow-scroll w-full max-h-96">{{ product }}
         </pre>
       </code>
 
