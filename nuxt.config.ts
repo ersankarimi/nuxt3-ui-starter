@@ -104,4 +104,28 @@ export default defineNuxtConfig({
       API_URL: process.env.NUXT_PUBLIC_API_URL,
     },
   },
+
+  // Nuxt Icon Configuration (https://github.com/nuxt/icon?tab=readme-ov-file#custom-local-collections)
+  icon: {
+    collections: [
+      "heroicons",
+      "mdi",
+    ],
+    clientBundle: {
+      // Turn this on to include custom collections
+      // includeCustomCollections: true,
+      scan: true,
+      icons: [
+        "heroicons",
+        "mdi",
+      ],
+    },
+    // Custom Collections
+    // customCollections: [
+    //   {
+    //     dir: "./assets/icons",
+    //     prefix: "custom",
+    //   },
+    // ],
+  },
 });
